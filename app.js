@@ -8,6 +8,8 @@ var app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.set(express.static("/public"));
+
+app.post("/test", router.test);
 app.use(function (req, res) {
     res.render("err");
 });

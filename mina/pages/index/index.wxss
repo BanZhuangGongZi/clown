@@ -1,4 +1,5 @@
 /**index.wxss**/
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -8,14 +9,86 @@
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
+  margin-top: 15rpx;
   border-radius: 50%;
 }
 
-.userinfo-nickname {
+.sub-title {
   color: #aaa;
 }
 
-.usermotto {
-  margin-top: 200px;
+.nick-name {
+  font-weight: bold;
+  color: #38a;
+}
+
+.emotion-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.emotion {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 35rpx;
+  border-radius: 15rpx;
+}
+
+.emotion1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+  background: #fff;
+}
+
+.emotion2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+  background: #ffe;
+}
+
+.emotion3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+  background: #ddd;
+}
+
+.emotion4 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+  background: #ccc;
+}
+
+.emotion5 {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+  background: #bbb;
+}
+
+.emotion-title {
+  text-align: center;
+}
+
+.emotion-des {
+  margin-top: 50rpx;
+  height: 150rpx;
+  width: 100%;
+}
+
+.emotion-text {
+  height: 100%;
+  width: 80%;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 20rpx;
 }
