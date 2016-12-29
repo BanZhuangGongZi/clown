@@ -7,31 +7,31 @@
 		<text class="sub-title">选择图标，写点文字，把它记录下来吧。</text>
 	</view>
 	<view class="emotion-container">
-		<view class="emotion">
+		<view class="emotion {{exClass1}}" bindtap="setEmotion" id="emotion1">
 			<image src="../../image/1.png" class="emotion1" />
 			<view class="emotion-title">
 				<text>非常好</text>
 			</view>
 		</view>
-		<view class="emotion">
+		<view class="emotion {{exClass2}}" bindtap="setEmotion" id="emotion2">
 			<image src="../../image/2.png" class="emotion2" />
 			<view class="emotion-title">
 				<text>还不错</text>
 			</view>
 		</view>
-		<view class="emotion">
+		<view class="emotion {{exClass3}}" bindtap="setEmotion" id="emotion3">
 			<image src="../../image/3.png" class="emotion3" />
 			<view class="emotion-title">
 				<text>一般般</text>
 			</view>
 		</view>
-		<view class="emotion">
+		<view class="emotion {{exClass4}}" bindtap="setEmotion" id="emotion4">
 			<image src="../../image/4.png" class="emotion4" />
 			<view class="emotion-title">
 				<text>不太好</text>
 			</view>
 		</view>
-		<view class="emotion">
+		<view class="emotion {{exClass5}}" bindtap="setEmotion" id="emotion5">
 			<image src="../../image/5.png" class="emotion5" />
 			<view class="emotion-title">
 				<text>很不好</text>
@@ -39,6 +39,9 @@
 		</view>
 	</view>
 	<view class="emotion-des">
-     <textarea  class="emotion-text" placeholder="一句话或一段文字，描述下吧..."/>
+     <textarea  class="emotion-text" placeholder="一句话或一段文字，描述下吧..." bindblur="getEmotionDes"/>
+	</view>
+	<view class="btn-container">
+	    <button type="primary" size="mini">保存心情</button>
 	</view>
 </view>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.main {
+			width: 800px;
+			height: 500px;
+			margin: 100px auto 0;
+			background: wheat;
+			border: 1px solid #ccc;
+			perspective: 800px;
+		}
+		
+		.item {
+			transform: rotateY(30deg) rotateZ(30deg);
+			-webkit-transform: rotateY(30deg) rotateZ(30deg);
+			width: 200px;
+			height: 100px;
+			background: #fed;
+			margin: 50px auto 0;
+		}
+		
+		.container {
+			width: 128px;
+			height: 100px;
+			margin-left: -64px;
+			-webkit-transition: -webkit-transform 1s;
+			-moz-transition: -moz-transform 1s;
+			transition: transform 1s;
+			-webkit-transform-style: preserve-3d;
+			-moz-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+			position: absolute;
+			left: 50%;
+			top: 200px;
+		}
+		
+		.piece {
+			width: 128px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+			-webkit-transition: opacity 1s, -webkit-transform 1s;
+			-moz-transition: opacity 1s, -moz-transform 1s;
+			transition: opacity 1s, transform 1s;
+			position: absolute;
+			bottom: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div id="container" class="container">
+			<img id="piece1" src="http://image.zhangxinxu.com/image/study/s/s128/mm1.jpg" class="piece" style="transform: rotateY(0deg) translateZ(195.839px);">
+			<img id="piece8" src="http://image.zhangxinxu.com/image/study/s/s128/mm8.jpg" class="piece" style="transform: rotateY(40deg) translateZ(195.839px);">
+			<img id="piece3" src="http://image.zhangxinxu.com/image/study/s/s128/mm3.jpg" class="piece" style="transform: rotateY(80deg) translateZ(195.839px);">
+			<img id="piece4" src="http://image.zhangxinxu.com/image/study/s/s128/mm4.jpg" class="piece" style="transform: rotateY(120deg) translateZ(195.839px);">
+			<img id="piece6" src="http://image.zhangxinxu.com/image/study/s/s128/mm6.jpg" class="piece" style="transform: rotateY(160deg) translateZ(195.839px);">
+			<img id="piece7" src="http://image.zhangxinxu.com/image/study/s/s128/mm7.jpg" class="piece" style="transform: rotateY(200deg) translateZ(195.839px);">
+			<img id="piece10" src="http://image.zhangxinxu.com/image/study/s/s128/mm10.jpg" class="piece" style="transform: rotateY(240deg) translateZ(195.839px);">
+			<img id="piece13" src="http://image.zhangxinxu.com/image/study/s/s128/mm13.jpg" class="piece" style="transform: rotateY(280deg) translateZ(195.839px);">
+			<img id="piece15" src="http://image.zhangxinxu.com/image/study/s/s128/mm15.jpg" class="piece" style="transform: rotateY(320deg) translateZ(195.839px);">
+		</div>
+	</div>
+</body>
+
+</html>
